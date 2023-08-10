@@ -9,16 +9,23 @@ int check_cycle(listint_t *list)
 {
 	if (list)
 	{
-		listint_t *e = list;
-		listint_t *c = list;
+		listint_t *f_loop;
+		listint_t *s_loop;
 
-		while (c && e->next)
+		if (list == NULL || list->next == NULL)
+			return  (0);
+
+		f_loop = list->next;
+		s_loop = list->next->next;
+
+		while (f_loop && s_loop && s_loop->next)
 		{
-			e = e->next;
-			c = c->next->next;
-
-			if (e == c)
+			if (f_loop == s_loop->next)
+			{
 				return (1);
+			}
+			f_loop = f_loop->next;
+			s_loop = s_loop->next->next;
 		}
 	}
 	return (0);
