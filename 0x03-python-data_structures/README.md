@@ -1,8 +1,6 @@
 # 0x03. Python - Data Structures: Lists, Tuples
 ---
 
-# Programming Tasks Readme
-
 This repository contains Python and C programming tasks, each focusing on different concepts and skills. Below are the descriptions of each task along with how to run and test them.
 
 ## Task 0: Print All Integers in a List
