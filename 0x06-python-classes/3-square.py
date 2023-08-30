@@ -9,3 +9,6 @@ class Square:
         if new_len < 0:
             raise ValueError('size must be >= 0')
         self._Square__side_len = new_len
+
+        def area(self):
+            return self._Square__side_len ** 2
