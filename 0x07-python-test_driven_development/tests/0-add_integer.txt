@@ -1,0 +1,69 @@
+"""
+0-add_integer - Unit Tests
+
+This module contains unit tests for the 'add_integer' function.
+
+Test Cases:
+
+1. Addition of two positive integers:
+   >>> add_integer(1, 2)
+   Expected Output: 3
+
+2. Addition of a positive and a negative integer:
+   >>> add_integer(3, -2)
+   Expected Output: 1
+
+3. Addition of two positive float numbers:
+   >>> add_integer(98.5, 30.2)
+   Expected Output: 128
+
+4. Addition of two negative float numbers:
+   >>> add_integer(-5.9, -0.7)
+   Expected Output: -5
+
+5. Addition of an integer and a float number:
+   >>> add_integer(5.5, -2)
+   Expected Output: 3
+
+6. Addition with one argument (default second argument as 98):
+   >>> add_integer(2)
+   Expected Output: 100
+
+Error Cases:
+
+7. TypeError for None arguments:
+   >>> add_integer(None)
+   Expected Output: TypeError: a must be an integer
+
+8. TypeError for second argument not declared:
+   >>> add_integer(5, None)
+   Expected Output: TypeError: b must be an integer
+
+9. TypeError for 'a' not being an integer:
+   >>> add_integer("text", 3)
+   Expected Output: TypeError: a must be an integer
+
+10. TypeError for 'b' not being an integer:
+    >>> add_integer(3, "text")
+    Expected Output: TypeError: b must be an integer
+
+11. NameError for 'a' not being an integer or a defined variable:
+    >>> add_integer(text, 3)
+    Expected Output: NameError: name 'text' is not defined
+
+12. NameError for both 'a' and 'b' not being integers or defined variables:
+    >>> add_integer(text1, text2)
+    Expected Output: NameError: name 'text1' is not defined
+
+13. TypeError for both 'a' and 'b' not being integers:
+    >>> add_integer("text1", "text2")
+    Expected Output: TypeError: a must be an integer
+
+14. OverflowError when 'a' is an int and 'b' is inf:
+    >>> add_integer(4, float('inf'))
+    Expected Output: OverflowError: cannot convert float infinity to integer
+
+15. ValueError for a non-assigned NaN:
+    >>> add_integer(float('NaN'))
+    Expected Output: ValueError: cannot convert float NaN to integer
+"""
