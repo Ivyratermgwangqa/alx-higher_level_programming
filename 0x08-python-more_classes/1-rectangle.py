@@ -33,8 +33,8 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    def attributes(self):
-        return {'width': self.width, 'height': self.height}
+        def attributes(self):
+            return {'height': self.height, 'width': self.width}
 
 if __name__ == "__main__":
     pass
