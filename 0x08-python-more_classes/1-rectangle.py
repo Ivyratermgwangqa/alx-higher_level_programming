@@ -4,16 +4,20 @@ Class rectangle
 """
 
 class Rectangle:
- """
-    This class represents a rectangle.
+    """
+    This class represents a Rectangle.
+
+    A Rectangle is defined by its width and height attributes.
 
     Attributes:
-        width (int): The width of the rectangle.
-        height (int): The height of the rectangle.
+        width (int): The width of the Rectangle.
+        height (int): The height of the Rectangle.
 
     Methods:
-        area(): Calculate the area of the rectangle.
-        perimeter(): Calculate the perimeter of the rectangle.
+        area(): Calculate and return the area of the Rectangle.
+        perimeter(): Calculate and return the perimeter of the Rectangle.
+        __str__(): Return a string representation of the Rectangle as a series of '#' characters.
+        __repr__(): Return a string representation of the Rectangle that can be used to recreate the object.
     """
     def __init__(self, width=0, height=0):
         self.width = width

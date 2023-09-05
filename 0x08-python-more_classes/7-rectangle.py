@@ -19,7 +19,7 @@ class Rectangle:
         perimeter(): Calculate and return the perimeter of the Rectangle.
         __str__(): Return a string representation of the Rectangle as a series of '#' characters.
         __repr__(): Return a string representation of the Rectangle that can be used to recreate the object.
-        """
+    """
     number_of_instances = 0
     print_symbol = "#"
 
