@@ -34,7 +34,8 @@ class Rectangle:
         self.__width = value
 
         def attributes(self):
-            return {'height': self.height, 'width': self.width}
+            key_order = ['height', 'width']
+            return {key: getattr(self, key) for key in key_order}
 
 if __name__ == "__main__":
     pass
