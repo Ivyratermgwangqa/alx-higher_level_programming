@@ -15,10 +15,10 @@ class Rectangle:
         height (int): The height of the Rectangle.
 
     Methods:
-        area(): Calculate and return the area of the Rectangle.
-        perimeter(): Calculate and return the perimeter of the Rectangle.
-        __str__(): Return a string representation of the Rectangle as a series of '#' characters.
-        __repr__(): Return a string representation of the Rectangle that can be used to recreate the object.
+        area(): Calculate and return area of the Rectangle.
+        perimeter(): Calculate and return the perimeter of Rectangle.
+        __str__(): Return a string representation of the Rectangle.
+        __repr__(): Return string representation of the Rectangle.
     """
     number_of_instances = 0
     print_symbol = "#"

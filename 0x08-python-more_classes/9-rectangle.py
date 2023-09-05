@@ -9,17 +9,17 @@ class Rectangle:
     Attributes:
         width (int): The width of the Rectangle.
         height (int): The height of the Rectangle.
-        number_of_instances (int): Count of the number of Rectangle instances created.
-        print_symbol (str): The symbol used to represent the Rectangle when printing.
+        number_of_instances (int): Count of num of Rectangle instances created.
+        print_symbol (str): Symbol used to represent Rectangle when printing.
 
     Methods:
         area(): Calculate and return the area of the Rectangle.
         perimeter(): Calculate and return the perimeter of the Rectangle.
-        __str__(): Return a string representation of the Rectangle as a series of '#' characters.
-        __repr__(): Return a string representation of the Rectangle that can be used to recreate the object.
+        __str__(): Return a string representation of the Rectangle
+        __repr__(): Return a string representation of the Rectangle.
         __del__(): Destructor method that decrements the count of instances.
-        bigger_or_equal(rect_1, rect_2): Compare two Rectangle instances and return the larger one.
-        square(cls, size): Create a square Rectangle instance with the given size.
+        bigger_or_equal(rect_1, rect_2): Compare two Rectangle instances.
+        square(cls, size): Create square Rectangle instance with given size.
 
     """
 

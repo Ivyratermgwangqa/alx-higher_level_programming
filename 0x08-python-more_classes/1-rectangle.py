@@ -3,7 +3,9 @@
 Class rectangle
 """
 
+
 class Rectangle:
+
     """
     This class represents a Rectangle.
 
@@ -16,8 +18,8 @@ class Rectangle:
     Methods:
         area(): Calculate and return the area of the Rectangle.
         perimeter(): Calculate and return the perimeter of the Rectangle.
-        __str__(): Return a string representation of the Rectangle as a series of '#' characters.
-        __repr__(): Return a string representation of the Rectangle that can be used to recreate the object.
+        __str__(): Return a string representation of the Rectangle.
+        __repr__(): Return a string representation of the Rectangle.
     """
     def __init__(self, width=0, height=0):
         self.width = width
@@ -46,10 +48,3 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-
-        def attributes(self):
-            key_order = ['height', 'width']
-            return {key: getattr(self, key) for key in key_order}
-
-if __name__ == "__main__":
-    pass
