@@ -61,3 +61,7 @@ class Rectangle:
 
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.__height})"
+if __name__ == "__main__":
+    myrectangle = Rectangle(10)
+    print(f"{myrectangle.width} - {myrectangle.height} => {myrectangle.area()} / {myrectangle.perimeter()}")
+
