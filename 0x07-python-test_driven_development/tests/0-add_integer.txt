@@ -1,7 +1,13 @@
-"""
+======================
+0-add_integer
+======================
 0-add_integer - Unit Tests
 
 This module contains unit tests for the 'add_integer' function.
+
+=====================
+
+::
 
 Test Cases:
 
@@ -66,4 +72,5 @@ Error Cases:
 15. ValueError for a non-assigned NaN:
     >>> add_integer(float('NaN'))
     Expected Output: ValueError: cannot convert float NaN to integer
-"""
+
+::
