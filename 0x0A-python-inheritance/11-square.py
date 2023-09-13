@@ -2,7 +2,7 @@
 """
 Module: my_module
 This module defines the MyInt class, which inherits from the int type.
-MyInt overrides the equality and inequality operators to provide custom behavior.
+MyInt overrides the equality and inequality operators.
 
 """
 
