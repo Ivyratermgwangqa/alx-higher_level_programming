@@ -1,16 +1,18 @@
 #!/usr/bin/python3
 """
 Module: my_module
-This module contains the 'to_json_string' function for converting an object to a JSON string.
+This module contains the 'to_json_string' function.
 
-The 'to_json_string' function takes an object as input and returns its JSON representation as a string.
+The 'to_json_string' function takes an object as input.
 """
+
+
 
 import json
 
 def to_json_string(my_obj):
     """
-    Convert an object to a JSON string representation.
+    Convert an object to a JSON string representa/tion.
 
     Args:
         my_obj: The object to be converted to a JSON string.
