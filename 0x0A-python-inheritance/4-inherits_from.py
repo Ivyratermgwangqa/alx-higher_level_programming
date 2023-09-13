@@ -3,6 +3,8 @@
 Module: my_module
 This module contains a function for checking if an object inherited.
 """
+
+
 def inherits_from(obj, a_class):
     """
     Function to check if an object is inherited in a class.
