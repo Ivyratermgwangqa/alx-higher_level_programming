@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+Module: my_module
+This module defines the BaseGeometry class.
+
+The BaseGeometry class provides a base structure for geometric objects.
+"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
