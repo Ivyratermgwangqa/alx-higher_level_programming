@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """
-Contains the function "wrtie_file"
+Module: my_module
+This module contains the 'write_file' function for writing a string.
+
+The 'write_file' function writes a specified string to a text file.
 """
 
 
