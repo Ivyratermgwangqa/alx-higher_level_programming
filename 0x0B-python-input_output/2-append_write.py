@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """
-function that appends a string
+Module: my_module
+This module contains the 'append_write' function for appending a string.
+
+The 'append_write' function appends a specified string to a text file.
 """
 
 
