@@ -5,6 +5,8 @@ This module defines the BaseGeometry class.
 
 The BaseGeometry class provides a base structure for geometric objects.
 """
+
+
 class BaseGeometry:
     """
     Type or class of BaseGeometry
