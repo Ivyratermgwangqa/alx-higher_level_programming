@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-Contains the read_file function
+Module: my_module
+This module contains the 'read_file' function for reading and printing.
+The 'read_file' function reads a text file in UTF-8 encoding and prints.
 """
 
 
