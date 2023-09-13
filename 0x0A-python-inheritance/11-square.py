@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-
-"""MyInt Module
+"""
+Module: my_module
 This module defines the MyInt class, which inherits from the int type.
 MyInt overrides the equality and inequality operators to provide custom behavior.
 
 """
-
 class MyInt(int):
     """Type class of MyInt inherit int type"""
 
