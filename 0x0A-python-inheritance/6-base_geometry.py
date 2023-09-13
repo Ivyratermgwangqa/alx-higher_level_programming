@@ -6,7 +6,9 @@ This module defines the BaseGeometry class.
 The BaseGeometry class provides base structure for geometric objects.
 """
 class BaseGeometry:
-    """Type or class of BaseGeometry"""
+    """
+    Type or class of BaseGeometry
+    """
 
     def area(self):
 
