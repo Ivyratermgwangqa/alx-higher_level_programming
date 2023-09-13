@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Module: my_module
-This module contains a function for checking if an object belongs to the same class or a subclass.
+This module contains function for checking if object belongs to subclass.
 """
 def is_kind_of_class(obj, a_class):
     """Check if an object belongs to the same class or a subclass.
