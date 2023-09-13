@@ -4,6 +4,8 @@ Module: my_module
 This module defines the BaseGeometry class.
 """
 class BaseGeometry:
-    """Type class of BaseGeometry"""
+    """
+    Type class of BaseGeometry
+    """
 
     pass
