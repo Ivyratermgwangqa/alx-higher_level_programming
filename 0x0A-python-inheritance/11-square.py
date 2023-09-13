@@ -6,7 +6,9 @@ MyInt overrides the equality and inequality operators to provide custom behavior
 
 """
 class MyInt(int):
-    """Type class of MyInt inherit int type"""
+    """
+    Type class of MyInt inherit int type
+    """
 
     def __eq__(self, other):
         return self.real != other
