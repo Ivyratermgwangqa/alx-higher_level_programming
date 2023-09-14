@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-
-class Square:
-    """
+ """
     Square represents a square with a side length.
 
     Attributes:
         _side_len (int): The side length of the square.
     """
+
+
+class Square:
     _side_len = 0
 
     def __init__(self, new_len=0):
