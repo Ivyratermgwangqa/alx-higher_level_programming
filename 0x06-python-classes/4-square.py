@@ -5,6 +5,8 @@
     Attributes:
         _side_len (int): The side length of the square.
     """
+
+
 class Square:
     _side_len = 0
 
