@@ -3,14 +3,6 @@
 Module: file_insertion
 This module defines a function for inserting text.
 
-The function 'append_after' reads the content of a text file.
-Usage:
-    To use the 'append_after' function, provide the filename.
-
-Example:
-    append_after("my_file.txt", "search_string", "new_text_to_insert")
-
-This will modify 'my_file.txt' by inserting "new_text_to_insert".
 """
 
 
