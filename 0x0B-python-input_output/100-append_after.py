@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """
 Module: file_insertion
 This module defines a function for inserting text.
