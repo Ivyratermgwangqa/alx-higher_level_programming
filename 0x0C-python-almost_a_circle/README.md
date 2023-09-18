@@ -1,6 +1,4 @@
-Certainly, here's a README file explaining the code snippets you provided:
-
-# README for Python Rectangle Class
+# Python Rectangle Class
 
 This README provides an overview of the Python Rectangle class and its usage. The code snippets provided are part of an assignment involving the implementation of a Rectangle class.
 
