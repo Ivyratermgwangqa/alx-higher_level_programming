@@ -15,3 +15,7 @@ class TestBaseInstances(unittest.TestCase):
         base1 = Base(None)
         base2 = Base(None)
         self.assertEqual(base1.id, base2.id - 1)
+
+
+        if __name__ == '__main__':
+            unittest.main()
