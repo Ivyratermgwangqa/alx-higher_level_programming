@@ -18,6 +18,7 @@ class Base:
         else:
             Base._num_objects += 1
             self.id = Base._num_objects
+
      @staticmethod
     def to_json_string(list_dictionaries):
         if list_dictionaries is None or len(list_dictionaries) == 0:
