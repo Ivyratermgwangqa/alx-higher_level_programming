@@ -6,6 +6,7 @@ import csv
 import turtle
 import random
 
+
 class Base:
     """Base class for managing objects."""
 
@@ -59,7 +60,14 @@ class Base:
 
         for shape in list_rectangles + list_squares:
             t.pensize(0)
-            t.color((random.randint(1, 254), random.randint(1, 254), random.randint(1, 254)))
+            random_color = (
+                    random.randint(1, 254),
+                    random.randint(1, 254),
+                    random.randint(1, 254)
+                    )
+
+            t.color(random_color)
+
             t.goto(x, y)
 
             if shape.height > max_height:
