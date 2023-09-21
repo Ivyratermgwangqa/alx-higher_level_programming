@@ -10,8 +10,9 @@ class Square(Rectangle):
 
     def __init__(self, size, x=0, y=0, id=None):
         """ Initialize Square instance """
+
         super().__init__(size, size, x, y, id)
-        
+
     def __str__(self):
         """ Return a string representation of the Square """
         return "[Square] ({}) {}/{} - {}".format(
@@ -61,14 +62,19 @@ class Square(Rectangle):
         square_dict['y'] = self.y
         return square_dict
 
-square_data = [
+
+square_data =
+[
     {"size": 5, "x": 0, "y": 0, "id": 1},
     {"size": 7, "x": 9, "y": 1, "id": 2}
 ]
-squares = [
+
+squares =
+[
     Square(data["size"], data["x"], data["y"], data["id"])
     for data in square_data
 ]
+
 if __name__ == "__main__":
     for square in squares:
         print(square)
