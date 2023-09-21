@@ -22,6 +22,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """Convert a Python list or dictionary to a JSON string."""
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         return json.dumps(list_dictionaries)
@@ -37,7 +38,8 @@ class Base:
                 f.write(Base.to_json_string(list_dictionaries))
 
     @staticmethod
-    def from_json_string(json_string):
+    def from_json_string(json_string): 
+        """Convert a JSON string to a Python list or dictionary."""
         if json_string is None or json_string == '[]':
             return []
         else:
