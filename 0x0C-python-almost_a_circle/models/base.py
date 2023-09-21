@@ -38,13 +38,13 @@ class Base:
                 f.write(Base.to_json_string(list_dictionaries))
 
     @staticmethod
-    def from_json_string(json_string): 
+    def from_json_string(json_string):
         """Convert a JSON string to a Python list or dictionary."""
         if json_string is None or json_string == '[]':
             return []
         else:
             return json.loads(json_string)
-            
+
     @classmethod
     def create(cls, **dictionary):
         """Create an instance with attributes set from a dictionary."""
@@ -69,7 +69,7 @@ class Base:
         except FileNotFoundError:
             pass
         return instance_list
-        
+
     @staticmethod
     def draw(list_rectangles, list_squares):
         """Draw rectangles and squares using Turtle."""
