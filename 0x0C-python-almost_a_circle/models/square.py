@@ -62,13 +62,14 @@ class Square(Rectangle):
         square_dict['y'] = self.y
         return square_dict
 
-
+# Define a list of data representing squares
 square_data =
 [
     {"size": 5, "x": 0, "y": 0, "id": 1},
     {"size": 7, "x": 9, "y": 1, "id": 2}
 ]
 
+# Create Square instances from the data
 squares =
 [
     Square(data["size"], data["x"], data["y"], data["id"])
@@ -76,5 +77,6 @@ squares =
 ]
 
 if __name__ == "__main__":
+    # Print the square objects
     for square in squares:
         print(square)
