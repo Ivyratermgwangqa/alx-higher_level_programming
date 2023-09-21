@@ -42,7 +42,32 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+            
+    @classmethod
+    def create(cls, **dictionary):
+        """Create an instance with attributes set from a dictionary."""
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)
+        elif cls.__name__ == "Square":
+            dummy = cls(1)
+        dummy.update(**dictionary)
+        return dummy
 
+    @classmethod
+    def load_from_file(cls):
+        """Load instances from a JSON file."""
+        filename = cls.__name__ + ".json"
+        instance_list = []
+        try:
+            with open(filename, 'r') as file:
+                json_data = file.read()
+                data_list = cls.from_json_string(json_data)
+                for item in data_list:
+                    instance_list.append(cls.create(**item))
+        except FileNotFoundError:
+            pass
+        return instance_list
+        
     @staticmethod
     def draw(list_rectangles, list_squares):
         """Draw rectangles and squares using Turtle."""
