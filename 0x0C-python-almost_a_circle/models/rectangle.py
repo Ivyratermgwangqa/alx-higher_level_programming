@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module of rectangle"""
 
+import csv
 from models.base import Base
 
 
