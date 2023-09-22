@@ -71,7 +71,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
-    
+
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """ Save a list of Rectangle instances to a CSV file """
@@ -104,7 +104,7 @@ class Rectangle(Base):
                     rectangles.append(rect)
         except FileNotFoundError:
             pass
-        return rectangles    
+        return rectangles
 
     def area(self):
         """Calculate area"""

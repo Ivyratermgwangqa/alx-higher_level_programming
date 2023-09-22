@@ -30,7 +30,6 @@ class Square(Rectangle):
         self.width = size
         self.height = size
 
-
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """ Save a list of Square instances to a CSV file """
