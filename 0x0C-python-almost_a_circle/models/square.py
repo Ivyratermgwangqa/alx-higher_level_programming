@@ -30,6 +30,40 @@ class Square(Rectangle):
         self.width = size
         self.height = size
 
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """ Save a list of Square instances to a CSV file """
+        filename = cls.__name__ + ".csv"
+        with open(filename, 'w', newline='') as csv_file:
+            fieldnames = ["id", "size", "x", "y"]
+            writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+            writer.writeheader()
+            for square in list_objs:
+                writer.writerow({
+                    "id": square.id,
+                    "size": square.size,
+                    "x": square.x,
+                    "y": square.y
+                })
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """ Load a list of Square instances from a CSV file """
+        filename = cls.__name__ + ".csv"
+        squares = []
+        try:
+            with open(filename, 'r') as csv_file:
+                reader = csv.DictReader(csv_file)
+                for row in reader:
+                    square = cls(0)
+                    for key, value in row.items():
+                        setattr(square, key, int(value))
+                    squares.append(square)
+        except FileNotFoundError:
+            pass
+        return squares
+
     def update(self, *args, **kwargs):
         """ Update Square attributes """
         if args:
