@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ 101-main """
+import sys
+print(sys.path)
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
