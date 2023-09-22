@@ -133,16 +133,4 @@ class TestRectangleMethods(unittest.TestCase):
             Rectangle({10, 7, 8}, 8)
 
     def test_width_frozen(self):
-        with self.assertRaisesRegex(TypeError, "width must be an integer"):
-            Rectangle(frozenset({10, 7, 8, 1}), 8)
-
-    def test_width_negative(self):
-        with self.assertRaisesRegex(ValueError, "width must be > 0"):
-            Rectangle(-10, 7)
-
-    def test_width_zero(self):
-        with self.assertRaisesRegex(ValueError, "width must be > 0"):
-            Rectangle(0, 7)
-
-if __name__ == '__main__':
-    unittest.main()
+        with self.a
