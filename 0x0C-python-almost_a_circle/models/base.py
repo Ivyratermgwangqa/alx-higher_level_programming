@@ -10,15 +10,15 @@ import random
 class Base:
     """Base class for managing objects."""
 
-    _num_objects = 0
+    _nb_objects = 0
 
     def __init__(self, id=None):
         """Initialize a Base object with an optional ID."""
         if id is not None:
             self.id = id
         else:
-            Base._num_objects += 1
-            self.id = Base._num_objects
+            Base._nb_objects += 1
+            self.id = Base._nb_objects
 
     @staticmethod
     def to_json_string(list_dictionaries):
