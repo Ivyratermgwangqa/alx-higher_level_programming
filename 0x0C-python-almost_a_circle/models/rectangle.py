@@ -71,6 +71,40 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+    
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """ Save a list of Rectangle instances to a CSV file """
+        filename = cls.__name__ + ".csv"
+        with open(filename, 'w', newline='') as csv_file:
+            fieldnames = ["id", "width", "height", "x", "y"]
+            writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+            writer.writeheader()
+            for rect in list_objs:
+                writer.writerow({
+                    "id": rect.id,
+                    "width": rect.width,
+                    "height": rect.height,
+                    "x": rect.x,
+                    "y": rect.y
+                })
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """ Load a list of Rectangle instances from a CSV file """
+        filename = cls.__name__ + ".csv"
+        rectangles = []
+        try:
+            with open(filename, 'r') as csv_file:
+                reader = csv.DictReader(csv_file)
+                for row in reader:
+                    rect = cls(0, 0)
+                    for key, value in row.items():
+                        setattr(rect, key, int(value))
+                    rectangles.append(rect)
+        except FileNotFoundError:
+            pass
+        return rectangles    
 
     def area(self):
         """Calculate area"""
