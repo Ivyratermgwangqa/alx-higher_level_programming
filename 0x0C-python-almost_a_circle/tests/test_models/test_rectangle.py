@@ -9,6 +9,9 @@ from models.rectangle import Rectangle
 class TestRectangleMethods(unittest.TestCase):
     """Type class unittest instance for rectangle"""
 
+    def setUp(self):
+        Base._Base__nb_objects = 0  # Reset the base class attribute
+
     def test_is_instance(self):
         self.assertIsInstance(Rectangle(10, 7), Rectangle)
 
@@ -17,8 +20,9 @@ class TestRectangleMethods(unittest.TestCase):
             Rectangle()
 
     def test_private_width(self):
+        rec = Rectangle(10, 7, 8, 2, 4)
         with self.assertRaises(AttributeError):
-            print(Rectangle(10, 7, 8, 2, 4).width)
+            print(rec._Rectangle__width)
 
     def test_getter_width(self):
         rec = Rectangle(10, 7, 8, 2, 4)
@@ -30,8 +34,9 @@ class TestRectangleMethods(unittest.TestCase):
         self.assertEqual(20, rec.width)
 
     def test_private_height(self):
+        rec = Rectangle(10, 7, 8, 2, 4)
         with self.assertRaises(AttributeError):
-            print(Rectangle(10, 7, 8, 2, 4).height)
+            print(rec._Rectangle__height)
 
     def test_getter_height(self):
         rec = Rectangle(10, 7, 8, 2, 4)
@@ -43,8 +48,9 @@ class TestRectangleMethods(unittest.TestCase):
         self.assertEqual(15, rec.height)
 
     def test_private_y(self):
+        rec = Rectangle(10, 7, 8, 2, 4)
         with self.assertRaises(AttributeError):
-            print(Rectangle(10, 7, 8, 2, 4).y)
+            print(rec._Rectangle__y)
 
     def test_getter_y(self):
         rec = Rectangle(5, 7, 7, 5, 1)
@@ -56,8 +62,9 @@ class TestRectangleMethods(unittest.TestCase):
         self.assertEqual(10, rec.y)
 
     def test_private_x(self):
+        rec = Rectangle(10, 7, 8, 2, 4)
         with self.assertRaises(AttributeError):
-            print(Rectangle(10, 7, 8, 2, 4).x)
+            print(rec._Rectangle__x)
 
     def test_getter_x(self):
         rec = Rectangle(5, 7, 7, 5, 1)
