@@ -1,0 +1,38 @@
+======================
+2-matrix_divided
+======================
+
+Matrix divided module: This module is the unit test for the matrix_divided function. It divides all elements of a matrix.
+# Test case 1: Normal case with integer matrix and divisor
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> div = 3
+>>> matrix_divided(matrix, div)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+# Test case 2: Normal case with float matrix and divisor
+>>> matrix = [[1.5, 2.5], [3.5, 4.5]]
+>>> div = 2.0
+>>> matrix_divided(matrix, div)
+[[0.75, 1.25], [1.75, 2.25]]
+
+# Test case 3: Matrix with one row
+>>> matrix = [[1, 2, 3]]
+>>> div = 2
+>>> matrix_divided(matrix, div)
+[[0.5, 1.0, 1.5]]
+
+# Test case 4: Matrix with empty row
+>>> matrix = [[1, 2, 3], [], [4, 5, 6]]
+>>> div = 3
+>>> matrix_divided(matrix, div)
+Traceback (most recent call last):
+    ...
+ValueError: matrix must be a matrix (list of lists) of integers/floats
+
+# Test case 5: Division by zero
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> div = 0
+>>> matrix_divided(matrix, div)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError: division by zero
