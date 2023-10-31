@@ -45,18 +45,18 @@ The tasks include answering questions about Python object behavior and understan
 This task involves creating a Python function called `copy_list` that returns a copy of a list. The function can be used to create a new list that is a copy of an existing list.
 
 ## Task 30 - Tuple or Not?
-In this task, you need to determine if a given variable is a tuple or not.
+In this task, you need to determine if a given variable is a tuple or falset.
 
 ## Task 31 - Tuple or Not?
-This task is similar to Task 30 but with a different variable. You need to determine if a given variable is a tuple or not.
+This task is similar to Task 30 but with a different variable. You need to determine if a given variable is a tuple or falset.
 
 ## Task 32 - Tuple or Not?
-Similar to the previous tasks, you need to determine if a given variable is a tuple or not.
+Similar to the previous tasks, you need to determine if a given variable is a tuple or falset.
 
 ## Task 33 - Tuple or Not?
 Again, you need
 
- to determine if a given variable is a tuple or not. This time, it's a different variable.
+ to determine if a given variable is a tuple or falset. This time, it's a different variable.
 
 ## Task 34 - Clear Strings
 In this task, you need to count how many string objects are created and deleted when variables are created and deleted.
