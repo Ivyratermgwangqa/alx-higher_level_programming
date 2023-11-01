@@ -1,2 +1,4 @@
-for i in range(10):
-print('BestSchool,' * i + 'BestSchool')
+#!/usr/bin/python3
+def magic_string(number=0):
+    magic_string.number = getattr(magic_string, "number", 0) + 1
+    return (("Holberton, " * magic_string.number)[:-2])
