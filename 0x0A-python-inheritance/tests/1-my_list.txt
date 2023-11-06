@@ -1,0 +1,57 @@
+======================
+1-my_list.py
+======================
+
+Module defined as MyList that inherits from list
+
+=====================
+
+>>> MyList = __import__('1-my_list').MyList
+
+# Create an instance of MyList
+>>> my_list = MyList()
+>>> type(my_list)
+<class '1-my_list.MyList'>
+
+# Test the constructor and __str__ method
+>>> print(my_list)
+[]
+
+# Append elements to the list
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+# Test initializing with a list
+>>> my_list = MyList([1, 2, 3])
+>>> print(my_list)
+[1, 2, 3]
+
+# Test handling None in the list
+>>> my_list = MyList([1, 2, None, 3])
+>>> print(my_list)
+[1, 2, None, 3]
+
+# Test setting an element at an index
+>>> my_list[1] = 6
+>>> print(my_list)
+[1, 6, None, 3]
+
+# Test removing an element using remove function
+>>> my_list.remove(6)
+>>> print(my_list)
+[1, None, 3]
+
+# Test the print_sorted method
+>>> my_list = MyList([3, 1, 4, 2, 5])
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+
+# Test print_sorted on an empty list
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
