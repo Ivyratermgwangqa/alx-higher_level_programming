@@ -25,6 +25,19 @@ The latter tasks introduced real-world data scenarios. The import and analysis o
 Documentation and Collaboration:
 The tasks emphasized the importance of documentation, as scripts were created to list tables and describe their structures. Additionally, collaboration tools like Git and GitHub were utilized to version control the code, ensuring a systematic and collaborative approach to the task completion.
 
+ **Connect to MySQL Server:**
+   ```bash
+   mysql -uroot -p
+   ```
+
+   - `-u`: Specifies the user (e.g., root).
+   - `-p`: Prompts for the password.
+
+ **Exit MySQL Shell:**
+    ```sql
+    EXIT;
+    ```
+
 ## Task 0: List Databases
 
 - **Script**: [0-list_databases.sql](0-list_databases.sql)
