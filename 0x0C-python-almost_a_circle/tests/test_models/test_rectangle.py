@@ -18,11 +18,11 @@ class TestRectangleMethods(unittest.TestCase):
     def test_empty_args(self):
         with self.assertRaises(TypeError):
             Rectangle()
-
+            
     def test_private_width(self):
         rec = Rectangle(10, 7, 8, 2, 4)
         with self.assertRaises(AttributeError):
-            print(rec._Rectangle__width)
+            print("Attempting to access private width:", rec._Rectangle__width)
 
     def test_getter_width(self):
         rec = Rectangle(10, 7, 8, 2, 4)
