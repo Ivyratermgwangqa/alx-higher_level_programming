@@ -1,7 +1,6 @@
 # MySQL More Queries Project
 
-![Alt Text](file:///C:/Users/Admin/Downloads/bc2575fee3303b731031.png)
-
+![SQL joins](https://i.stack.imgur.com/KDi5d.png)
 
 ```markdown
 
