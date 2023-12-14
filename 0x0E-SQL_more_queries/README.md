@@ -1,7 +1,88 @@
-Certainly! Here's the modified README.md file with the additional tasks included:
-
 # MySQL More Queries Project
 
+```markdown
+
+This project is designed to enhance your understanding of MySQL, focusing on various topics such as user management, privileges, constraints, and advanced SQL techniques. The learning objectives include creating and managing users, understanding primary and foreign keys, using constraints, retrieving data from multiple tables, and employing advanced SQL techniques like joins and unions.
+
+## Prerequisites
+
+- Ubuntu 20.04 LTS
+- MySQL 8.0 (version 8.0.25)
+
+## Installation
+
+To install MySQL 8.0 on Ubuntu 20.04 LTS, use the following commands:
+
+```bash
+$ sudo apt update
+$ sudo apt install mysql-server
+$ mysql --version
+```
+
+Connect to your MySQL server:
+
+```bash
+$ sudo mysql
+```
+
+To run MySQL in a container, use "container-on-demand" with the credentials `root/root`. Connect via SSH or Web terminal.
+
+Start MySQL in the container:
+
+```bash
+$ service mysql start
+```
+
+## Usage
+
+- Execute SQL queries using allowed editors: vi, vim, emacs.
+- Ensure all SQL queries have a comment just before the syntax.
+- Start your SQL files with a comment describing the task.
+- Use uppercase for all SQL keywords (SELECT, WHERE, etc.).
+- Include a README.md file at the root of the project folder.
+
+## Examples
+
+To list the first three students in Batch ID=3, use the following SQL query:
+
+```sql
+-- 3 first students in the Batch ID=3
+-- because Batch 3 is the best!
+SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
+```
+
+## Database Interaction
+
+To list databases in MySQL, use the following command:
+
+```bash
+$ cat 0-list_databases.sql | mysql -uroot -p
+```
+
+To import a SQL dump, create a database and run the following commands:
+
+```bash
+$ echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -uroot -p
+$ curl "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql" -s | mysql -uroot -p hbtn_0d_tvshows
+$ echo "SELECT * FROM tv_genres" | mysql -uroot -p hbtn_0d_tvshows
+```
+
+Replace `hbtn_0d_tvshows` with your desired database name.
+
+## Learning Objectives
+
+By the end of this project, you should be able to:
+
+- Create a new MySQL user
+- Manage privileges for a user to a database or table
+- Understand PRIMARY KEY and FOREIGN KEY
+- Use NOT NULL and UNIQUE constraints
+- Retrieve data from multiple tables in one request
+- Work with subqueries, JOIN, and UNION in SQL
+
+```
+
+Feel free to customize the content based on your specific project requirements and structure.
 ## Overview
 
 This project focuses on MySQL database management tasks, encompassing user privilege management, table creation, and complex data querying. The tasks are designed to reinforce understanding of MySQL concepts such as user management, table design, and the execution of intricate queries involving joins and subqueries.
@@ -99,146 +180,22 @@ It lists all Comedy shows in the `hbtn_0d_tvshows` database.
 ### Task 16
 
 This script lists all shows and their linked genres from the `hbtn_0d_tvshows` database.
+Certainly! Below is the continuation of the README with the descriptions for the specified tasks:
 
-### Not My Genre
+### Task 17
+This script lists all genres not linked to the show "Dexter" in the `hbtn_0d_tvshows` database.
 
-#### Task 17
+### Task 18
+It lists all shows in the `hbtn_0d_tvshows` database without the Comedy genre.
 
-Import the database dump from hbtn_0d_tvshows to your MySQL server: [download link](same-as-16-shows_by_genre.sql)
+### Task 19
+This script lists all shows from the `hbtn_0d_tvshows_rate` database by their ratings.
 
-Write a script that uses the `hbtn_0d_tvshows` database to list all genres not linked to the show Dexter.
-
-- The `tv_shows` table contains only one record where `title = Dexter` (but the `id` can be different).
-- Each record should display: `tv_genres.name`.
-- Results must be sorted in ascending order by the genre name.
-- You can use a maximum of two `SELECT` statements.
-- The database name will be passed as an argument of the `mysql` command.
-
-```bash
-guillaume@ubuntu:~/$ cat 100-not_my_genres.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
-Enter password:
-name
-Adventure
-Comedy
-Fantasy
-guillaume@ubuntu:~/$
-```
-
-#### Repo:
-
-- GitHub repository: `alx-higher_level_programming`
-- Directory: `0x0E-SQL_more_queries`
-- File: `100-not_my_genres.sql`
-- [Get a sandbox](#)
-
-### No Comedy Tonight
-
-#### Task 18
-
-Import the database dump from hbtn_0d_tvshows to your MySQL server: [download link](same-as-100-not_my_genres.sql)
-
-Write a script that lists all shows without the genre Comedy in the database `hbtn_0d_tvshows`.
-
-- The `tv_genres` table contains only one record where `name = Comedy` (but the `id` can be different).
-- Each record should display: `tv_shows.title`.
-- Results must be sorted in ascending order by the show title.
-- You can use a maximum of two `SELECT` statements.
-- The database name will be passed as an argument of the `mysql` command.
-
-```bash
-guillaume@ubuntu:~/$ cat 101-not_a_comedy.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
-Enter password:
-title
-Better Call Saul
-Breaking Bad
-Dexter
-Game of Thrones
-Homeland
-House
-guillaume@ubuntu:~/$
-```
-
-#### Repo:
-
-- GitHub repository: `alx-higher_level_programming`
-- Directory: `0x0E-SQL_more_queries`
-- File: `101-not_a_comedy.sql`
-- [Get a sandbox](#)
-
-### Rotten Tomatoes
-
-#### Task 19
-
-Import the database `hbtn_0d_tvshows_rate` dump to your MySQL server: [download link](#)
-
-Write a script that lists all shows from `hbtn_0d_tvshows_rate` by their rating.
-
-- Each record should display: `tv_shows.title - rating sum`.
-- Results must be sorted in descending order by the rating.
-- You can use only one `SELECT` statement.
-- The database name will be passed as an argument of the `mysql` command.
-
-```bash
-guillaume@ubuntu:~/$ cat 102-rating_shows.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows_rate
-Enter password:
-title   rating
-Better Call Saul    163
-Homeland    145
-Silicon Valley  82
-Game of Thrones 79
-Dexter  24
-House   21
-Breaking Bad    16
-The Last Man on Earth   10
-The Big Bang Theory 0
-New Girl    
-
- 0
-guillaume@ubuntu:~/$
-```
-
-#### Repo:
-
-- GitHub repository: `alx-higher_level_programming`
-- Directory: `0x0E-SQL_more_queries`
-- File: `102-rating_shows.sql`
-- [Get a sandbox](#)
-
-### Best Genre
-
-#### Task 20
-
-Import the database dump from `hbtn_0d_tvshows_rate` to your MySQL server: [download link](same-as-102-rating_shows.sql)
-
-Write a script that lists all genres in the database `hbtn_0d_tvshows_rate` by their rating.
-
-- Each record should display: `tv_genres.name - rating sum`.
-- Results must be sorted in descending order by their rating.
-- You can use only one `SELECT` statement.
-- The database name will be passed as an argument of the `mysql` command.
-
-```bash
-guillaume@ubuntu:~/$ cat 103-rating_genres.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows_rate
-Enter password:
-name    rating
-Drama   150
-Comedy  92
-Adventure   79
-Fantasy 79
-Mystery 45
-Crime   40
-Suspense    40
-Thriller    40
-guillaume@ubuntu:~/$
-```
-
-#### Repo:
-
-- GitHub repository: `alx-higher_level_programming`
-- Directory: `0x0E-SQL_more_queries`
-- File: `103-rating_genres.sql`
-- [Get a sandbox](#)
+### Task 20
+It lists all genres in the `hbtn_0d_tvshows_rate` database by their ratings.
 
 ## Conclusion
 
 These SQL scripts cover a range of tasks, from user management to table creation and complex data querying. Each script addresses a specific requirement, contributing to a comprehensive understanding of MySQL concepts in a TV shows database context. Refer to individual scripts for detailed implementations.
+```
+```markdown
