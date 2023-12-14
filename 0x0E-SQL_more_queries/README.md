@@ -1,6 +1,6 @@
 # MySQL More Queries Project
 
-![Database Schema](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/bc2575fee3303b731031.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231214T002811Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ab604fcea9eb4b0644dbc5a4dccd947a28fb479a8fcdeab6ced74887d0fd366b)
+![Alt Text](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5rCS9QlvXcs0vQHy_gOfoIKZ8SHVfWxNL54dE68uN02Y8H9Xw)
 
 
 ```markdown
