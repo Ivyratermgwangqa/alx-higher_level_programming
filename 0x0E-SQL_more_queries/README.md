@@ -2,6 +2,7 @@
 
 ![Database Schema](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/bc2575fee3303b731031.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231214T002811Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ab604fcea9eb4b0644dbc5a4dccd947a28fb479a8fcdeab6ced74887d0fd366b)
 
+
 ```markdown
 
 This project is designed to enhance your understanding of MySQL, focusing on various topics such as user management, privileges, constraints, and advanced SQL techniques. The learning objectives include creating and managing users, understanding primary and foreign keys, using constraints, retrieving data from multiple tables, and employing advanced SQL techniques like joins and unions.
