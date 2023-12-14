@@ -1,6 +1,10 @@
--- Lists all shows from the hbtn_0d_tvshows_rate database by their ratings.
-SELECT tv_shows.title, SUM(rating) AS rating_sum
+-- Lists all shows in the hbtn_0d_tvshows database without the Comedy genre.
+SELECT tv_shows.title
 FROM tv_shows
-JOIN tvshows_rate ON tv_shows.id = tvshows_rate.show_id
-GROUP BY tv_shows.title
-ORDER BY rating_sum DESC;
+WHERE tv_shows.id NOT IN (
+    SELECT tv_show_genres.show_id
+    FROM tv_show_genres
+    JOIN tv_genres ON tv_show_genres.genre_id = tv_genres.id
+    WHERE tv_genres.name = 'Comedy'
+)
+ORDER BY tv_shows.title;
