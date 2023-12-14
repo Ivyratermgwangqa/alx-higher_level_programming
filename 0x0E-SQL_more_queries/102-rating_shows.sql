@@ -1,5 +1,4 @@
 -- Lists all shows from the hbtn_0d_tvshows_rate database by their ratings.
--- List all shows from hbtn_0d_tvshows_rate by their rating
 SELECT title, SUM(rating) as rating_sum
 FROM tv_shows
 GROUP BY title
