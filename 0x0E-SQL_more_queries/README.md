@@ -34,13 +34,13 @@ $ service mysql start
 ```
 
 ## Usage
-
+```
 - Execute SQL queries using allowed editors: vi, vim, emacs.
 - Ensure all SQL queries have a comment just before the syntax.
 - Start your SQL files with a comment describing the task.
 - Use uppercase for all SQL keywords (SELECT, WHERE, etc.).
 - Include a README.md file at the root of the project folder.
-
+```
 ## Examples
 
 To list the first three students in Batch ID=3, use the following SQL query:
@@ -70,7 +70,7 @@ $ echo "SELECT * FROM tv_genres" | mysql -uroot -p hbtn_0d_tvshows
 Replace `hbtn_0d_tvshows` with your desired database name.
 
 ## Learning Objectives
-
+```
 By the end of this project, you should be able to:
 
 - Create a new MySQL user
@@ -79,7 +79,8 @@ By the end of this project, you should be able to:
 - Use NOT NULL and UNIQUE constraints
 - Retrieve data from multiple tables in one request
 - Work with subqueries, JOIN, and UNION in SQL
-
+```
+```
 ```
 
 Feel free to customize the content based on your specific project requirements and structure.
@@ -197,5 +198,3 @@ It lists all genres in the `hbtn_0d_tvshows_rate` database by their ratings.
 ## Conclusion
 
 These SQL scripts cover a range of tasks, from user management to table creation and complex data querying. Each script addresses a specific requirement, contributing to a comprehensive understanding of MySQL concepts in a TV shows database context. Refer to individual scripts for detailed implementations.
-```
-```markdown
