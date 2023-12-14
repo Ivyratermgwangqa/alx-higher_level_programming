@@ -1,6 +1,6 @@
 # MySQL More Queries Project
 
-![Alt Text](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5rCS9QlvXcs0vQHy_gOfoIKZ8SHVfWxNL54dE68uN02Y8H9Xw)
+![Alt Text](file:///C:/Users/Admin/Downloads/bc2575fee3303b731031.png)
 
 
 ```markdown
