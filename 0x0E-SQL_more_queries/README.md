@@ -80,10 +80,7 @@ By the end of this project, you should be able to:
 - Retrieve data from multiple tables in one request
 - Work with subqueries, JOIN, and UNION in SQL
 ```
-```
-```
 
-Feel free to customize the content based on your specific project requirements and structure.
 ## Overview
 
 This project focuses on MySQL database management tasks, encompassing user privilege management, table creation, and complex data querying. The tasks are designed to reinforce understanding of MySQL concepts such as user management, table design, and the execution of intricate queries involving joins and subqueries.
