@@ -1,7 +1,5 @@
 ```markdown
-# JavaScript Warm-Up
-
-This repository contains solutions for JavaScript warm-up tasks.
+# 0x12-javascript-warm_up
 
 ## Environment Setup
 
